@@ -42,3 +42,26 @@ function calculateRhombusArea() {
     areaSpan.innerText = area;
     
 }
+
+function calculatePentagonArea() {
+    const p_input = document.getElementById('pentagon-p');
+    const p = parseFloat(p_input.value);
+    const b_input = document.getElementById('pentagon-b');
+    const b = parseFloat(b_input.value);
+    let area = 0.5 * p * b;
+
+    const areaSpan = document.getElementById('pentagon-area');
+    areaSpan.innerText = area;
+    
+}
+function calculateEllipseArea() {
+    const a_input = document.getElementById('ellipse-a');
+    const a = parseFloat(a_input.value);
+    const b_input = document.getElementById('ellipse-b');
+    const b = parseFloat(b_input.value);
+    let area = Math.PI * a * b;
+
+    const areaSpan = document.getElementById('ellipse-area');
+    areaSpan.innerText = area.toFixed(2);;
+    
+}
